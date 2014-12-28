@@ -44,5 +44,5 @@ rankall <- function(outcome, num = "best") {
 
   nth_by_state <- mapply(get_nth, choices_by_state, rank_by_state, name_by_state)
 
-  data.frame(hospital = nth_by_state, states=names(nth_by_state))
+  data.frame(hospital = nth_by_state, state=names(nth_by_state))
 }
