@@ -30,7 +30,6 @@ rankall <- function(outcome, num = "best") {
   rank_by_state <- mapply(get_rank, choices_by_state, measure_by_state, name_by_state)
 
   get_nth <- function(choices, rank, name) {
-    
     index <- if (num == "best") {
       1
     } else if (num == "worst") {
